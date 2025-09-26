@@ -1,6 +1,12 @@
 <?php
 $title = "Саввин Владислав Александрович 241-362 ЛР 3";
 $current = basename($_SERVER['PHP_SELF']);
+$link1 = "index.php";
+$name1 = "О проекте";
+$link2 = "journal.php";
+$name2 = "Журнал";
+$link3 = "resources.php";
+$name3 = "Ресурсы";
 ?>
 <!doctype html>
 <html lang="ru">
@@ -14,9 +20,9 @@ $current = basename($_SERVER['PHP_SELF']);
     <div class="container">
         <span href="#" class="logo">SYNTHADRY</span>
         <nav>
-            <a href="<?php echo 'index.php'; ?>" class="<?php echo $current=='index.php'?'selected_menu':''; ?>">О проекте</a>
-            <a href="<?php echo 'journal.php'; ?>" class="<?php echo $current=='journal.php'?'selected_menu':''; ?>">Журнал</a>
-            <a href="<?php echo 'resources.php'; ?>" class="<?php echo $current=='resources.php'?'selected_menu':''; ?>">Ресурсы</a>
+            <a href="<?php echo $link1; ?>" class="<?php echo $current==$link1?'selected_menu':''; ?>"><?php echo $name1; ?></a>
+            <a href="<?php echo $link2; ?>" class="<?php echo $current==$link2?'selected_menu':''; ?>"><?php echo $name2; ?></a>
+            <a href="<?php echo $link3; ?>" class="<?php echo $current==$link3?'selected_menu':''; ?>"><?php echo $name3; ?></a>
         </nav>
     </div>
 </header>

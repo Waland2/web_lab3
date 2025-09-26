@@ -8,7 +8,6 @@ $name2 = "Журнал";
 $link3 = "resources.php";
 $name3 = "Ресурсы";
 ?>
-?>
 <!doctype html>
 <html lang="ru">
 <head>
